@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>
+            Minha página
+        </title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+
+    <body onload="load()">
+        <!--tudo que estiver dentro da tag script faz parte do javascript-->
+        <!--posso criar uma nova página "main.js" e editar o js em outra janela, assim como faço com o CSS-->
+        <script>
+        </script>
+        <button type="button" onclick="clicou()">Cliquei aqui</button>
+        <p id="agradecimento"></p>
+        <button type="button" onclick="redirecionar()">Cliquei aqui</button>
+        <p id="mouseMove" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui!</p>
+
+        <!--Nesse formato não é necessário utilizar o id, eu posso utilizar quantos elementos eu quiser-->
+        <p onmouseover="trocar2(this)" onmouseout="voltar2(this)">Passe o mouse aqui!</p>
+        <p onmouseover="trocar2(this)" onmouseout="voltar2(this)">Passe o mouse aqui!</p>
+        <p onmouseover="trocar2(this)" onmouseout="voltar2(this)">Passe o mouse aqui!</p>
+        <p onmouseover="trocar2(this)" onmouseout="voltar2(this)">Passe o mouse aqui!</p>
+
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+    </body>
+</html>
